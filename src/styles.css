@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/* COMMON */
+.p-cursor{
+    cursor:pointer;
+}
+.p-flex{
+    display: flex;
+}
+.p-flex-align-center{
+    align-items: center;
+}
+.p-flex-jc-sb{
+    justify-content: center;
+}
