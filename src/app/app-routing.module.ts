@@ -8,7 +8,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 //import {hom}
 
 const routes: Routes = [
-  { path: '', component:InterestingLinksComponent},
+  { path: '', component:HomeComponent},
   { path:'home', component: HomeComponent},
   { path:'aboutme', component:AboutMeComponent},
   { path:'interesting-links', component:InterestingLinksComponent},
