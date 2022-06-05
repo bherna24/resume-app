@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+}
+ @media only screen and (max-width: 700px){
+    .container{
+     flex-wrap:wrap;
+     justify-content: center;
+    }
+ }
+.image{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.personal-pic{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    float:left;
+}
+.p-readmore{
+    color: palevioletred;
+    font-weight: 600;
+    transition: all .5s;
+    transform: translateX(0);
+    
+}
+.p-readmore:hover {
+    transform: translateX(15px)
+}
