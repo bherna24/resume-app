@@ -12,12 +12,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { HomeComponent } from './home/home.component';
+import { InterestingLinksComponent } from './interesting-links/interesting-links.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
-    HomeComponent
+    HomeComponent,
+    InterestingLinksComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
