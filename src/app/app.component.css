@@ -1,11 +1,3 @@
-body{  
-  background-image: url("/assets/img/perspective.png");
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center;
-  width:100%;
-}
-
 mat-toolbar {
   height:auto;
   width:100%;
@@ -24,6 +16,14 @@ mat-sidenav {
   background-color: transparent;
   background-image: linear-gradient(transparent,#dca79f,#815d91,transparent);
 
+}
+
+a {
+  text-decoration: none;
+}
+
+.mat-drawer{
+  position: fixed;
 }
 
 .content{
@@ -64,16 +64,18 @@ mat-sidenav-container{
   justify-content: center;
   flex-direction: column;
   font-size: 1rem;
+}
 
-}mat-icon{
-    margin-right:8px;
-  }
+mat-icon{
+  margin-right:8px;
+}
 
 mat-divider{
     margin-top:16px;
     margin-bottom:16px;
     background-color: blueviolet;
   }
+
 .avatar {
   margin-top:16px;
   width: 100px;
@@ -81,8 +83,10 @@ mat-divider{
   border-radius:50%;
 }
 
-
 footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   font-family: Helvetica, Arial, sans-serif;
   margin: 0 auto;
   width: 100%;
@@ -92,7 +96,22 @@ footer {
 }
 
 footer img {
-    width: 35px;
-    border-radius: 50%;
-    margin-right: 5px;
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.custom-icon{
+  display:flex;
+  color:#dca79f;
+  font-size: 35px;
+  margin-right: 5px;
+}
+
+.custom-icon:hover{
+  color:white;
+}
+
+.fa-btc{
+  padding-bottom: 5px;
 }

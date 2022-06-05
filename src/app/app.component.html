@@ -1,19 +1,18 @@
-<body>
 <mat-toolbar>
   <button
-  mat-icon-button
-  *ngIf="sidenav.mode === 'over'"
-  (click)="sidenav.toggle()"
->
-  <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
-  <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
-</button>
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()">
+
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
 
 </mat-toolbar>
 
 <mat-sidenav-container>
 
-   <mat-sidenav #sidenav="matSidenav">
+  <mat-sidenav #sidenav="matSidenav">
     <img class="avatar mat-elevation-z8" src="assets/img/blurry.jpg" alt="girl with big smile"/>
 
     <h4 class="name">Brenda Hernandez</h4>
@@ -30,7 +29,7 @@
         <mat-icon>face</mat-icon>
         <span>About</span>
       </button>
-      <button mat-button>
+      <button mat-button routerLink="interesting-links">
         <mat-icon>bookmark</mat-icon>
         <span>Interesting Stuff</span>
       </button>
@@ -40,33 +39,38 @@
 
     <footer class="footer">
       <a href="https://www.instagram.com/_brhrn/">
-        <img class="socialMedia" src="assets/img/instagram.png">
+        <img src="assets/img/instagram.png">
       </a>
       <a href="https://www.linkedin.com/in/brenda-hernandez-600362133/">
-          <img class="socialMedia" src="assets/img/linkedin.png">
-      </a>
-      <a href="https://medium.com/@brenda.hernandez243/about">
-          <img class="socialMedia" src="assets/img/medium.png">
+          <img src="assets/img/linkedin.png">
       </a>
       <a href="mailto:brenda.hernandez243@gmail.com">
-          <img class="socialMedia" src="assets/img/email.png">
+        <img src="assets/img/email.png">
       </a>
+      <a href="https://www.filmaffinity.com/en/userratings.php?user_id=4204794">
+        <img style="border-radius:20%" src="assets/img/falogo.png">
+      </a>
+      <div class="custom-icon">
+        <a href="https://medium.com/@brenda.hernandez243/about">
+          <i class="fa fa-medium custom-icon"></i>
+        </a>
+        <a href="https://github.com/bherna24">
+          <i class="fa custom-icon">&#xf09b;</i>
+        </a>
+        <a href="https://coinbase.com/join/hernan_lcib">
+          <i class="fa fa-btc custom-icon"></i>
+        </a>
+      </div>
     </footer>
   </mat-sidenav>
 
-    <mat-sidenav-content>
-      <div class="content mat-elevation-z4">
-        <h2>Hello there!</h2>
-        <div class="card">
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z4">
+      <h2>Hello there!</h2>
+      <div class="card">
         <router-outlet></router-outlet>
       </div>
-      </div>
-    </mat-sidenav-content>
+    </div>
+  </mat-sidenav-content>
   
 </mat-sidenav-container>
-
-
-</body>
-<!--<div class ="container">
-    
-  </div> -->
