@@ -1,8 +1,39 @@
 .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    margin:6% 6%;
+    margin:4% 4%;
+    margin-top: 0;
     font-size: larger;
 }
+
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+
+  .mat-form-field{
+    font-size: 14px;
+    width: 100%;
+  }
+  .example-header{
+    min-height: 64px;
+    padding: 8px 24px;
+  }
+/*
+.mat-expansion-panel-body{
+    padding: 0 20% 16px;
+}
+mat-accordion{
+    
+}*/

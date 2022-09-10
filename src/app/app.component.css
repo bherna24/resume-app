@@ -41,6 +41,7 @@ a {
   backdrop-filter: brightness(0.65);
 
   flex-wrap: wrap;
+  max-height: 634px;
 
 }
 

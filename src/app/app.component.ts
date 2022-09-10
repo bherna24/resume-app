@@ -14,7 +14,9 @@ export class AppComponent {
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
 
 
-  constructor(private observer: BreakpointObserver, private router: Router) {}
+  constructor(
+    private observer: BreakpointObserver, 
+    private router: Router) {}
 
   ngAfterViewInit() {
     this.observer.observe(['(max-width:800px)']).subscribe((res) =>{
