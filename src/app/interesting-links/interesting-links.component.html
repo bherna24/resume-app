@@ -1,10 +1,9 @@
 <div  class="container">
        <p>
        <br>
-        With an unquenching thirst for knowledge, I sift through works and books for ideas and concepts; a big-picture concept that can explain my existence is what I'm after.
-      The following list contains some of my favorite works!</p>
-      
-        <div class="mat-elevation-z8">
+        With an unquenching thirst for knowledge, I sift through works and books for ideas and concepts; 
+        a big-picture concept that can explain my existence is what I'm after!</p>
+      <div class="booktable">
         
         <table mat-table [dataSource]="dataSource" matSort>
 
@@ -28,9 +27,9 @@
             
             </table>
 
-            <mat-paginator [pageSizeOptions]="[5, 10, 20]" aira-label="Select page of books"></mat-paginator>
+            <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aira-label="Select page of books"></mat-paginator>
       </div>
-  </div>
+    </div>
 
 <!--   <tr class="mat-row" *matNoDataRow>
                 <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>

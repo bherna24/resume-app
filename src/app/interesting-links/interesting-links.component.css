@@ -30,6 +30,25 @@ table {
     min-height: 64px;
     padding: 8px 24px;
   }
+
+  table.mat-table{
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .mat-column-author{
+    width: 10%;
+  }
+  .mat-column-title{
+    width: 15%;
+  }
+
+  .videos{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mat-paginator{
+    background-color: rgba(0, 0, 0, 0);
+  }
 /*
 .mat-expansion-panel-body{
     padding: 0 20% 16px;
