@@ -29,7 +29,7 @@ const ELEMENT_DATA: Book[] = [
   { id: 10, title: 'The Art of Loving',  author: 'Erich Fromm', desc: `On what it means to understand and act in love` },
   { id: 11, title: 'The Faifthful Gardener', author: 'Clarissa Pinkola Estes', desc: `A wise story about that which can never die. About pain, rebirth, and life.`},
   { id: 12, title: 'The Alchemist', author: 'Paulo Coelho', desc: `A hero's journey, coming-of-age novel about dicovering one's purpose in life.`},
-  { id: 13, title: 'Priceless: The Myth of Fair Value', author:'William Poundstone', desc: `Discusses the mehtod by which price is conceived: there is no method and its all madness`}
+  { id: 13, title: 'Priceless: The Myth of Fair Value', author:'William Poundstone', desc: `Discusses the method by which price is conceived: there is no method and its all madness`}
 ];
 
 @Component({
