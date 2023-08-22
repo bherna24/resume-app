@@ -1,0 +1,9 @@
+.videos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mat-card{
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}

@@ -1,9 +1,9 @@
+
 import { Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort,  } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
-/*
 export interface Book {
   id: number;
   title: string;
@@ -22,18 +22,18 @@ const ELEMENT_DATA: Book[] = [
   { id: 8, title: 'Beautiful Disaster',  author: 'Jamie McGuire', desc:`A romance about two egotistical college students` },
   { id: 9, title: 'Four Loves',  author: 'C.S. Lewis', desc: `A description and introduction to Love & its types` },
   { id: 10, title: 'The Art of Loving',  author: 'Erich Fromm', desc: `On what it means to understand and act in love` },
-  { id: 11, title: 'The Faifthful Gardener', author: 'Clarissa Pinkola Estes', desc: `A wise story about that which can never die. About pain, rebirth, and life.`},
+  { id: 11, title: 'The Faifthful Gardener', author: 'Clarisa Pinkola Estes', desc: `A wise story about that which can never die. About pain, rebirth, and life.`},
   { id: 12, title: 'The Alchemist', author: 'Paulo Coelho', desc: `A hero's journey, coming-of-age novel about dicovering one's purpose in life.`},
-  { id: 13, title: 'Priceless: The Myth of Fair Value', author:'William Poundstone', desc: `Discusses the method by which price is conceived: there is no method and its all madness`}
+  { id: 13, title: 'Priceless: The Myth of Fair Value', author:'William Poundstone', desc: `Discusses the mehtod by which price is conceived: there is no method and its all madness`}
 ];
-*/
+
+
 @Component({
-  selector: 'app-interesting-links',
-  templateUrl: './interesting-links.component.html',
-  styleUrls: ['./interesting-links.component.css'],
+  selector: 'app-books',
+  templateUrl: './books.component.html',
+  styleUrls: ['./books.component.css']
 })
-export class InterestingLinksComponent {
-  /*
+export class BooksComponent {
   displayedColumns: string[]= ['title', 'author', 'desc'];
   dataSource = new MatTableDataSource<Book>(ELEMENT_DATA);  
 
@@ -48,15 +48,5 @@ export class InterestingLinksComponent {
     this.dataSource.sort = this.sort;
 
   }
-*/
-/*  applyFilter(filterValue: string){
-    filterValue = filterValue.trim(); // removes whitespaces
-    filterValue = filterValue.toLowerCase(); //defaults to lowercase matches
-    this.dataSource.filter = filterValue;
 
-    if(this.dataSource.paginator){
-      this.dataSource.paginator.firstPage();
-    }
-  }*/
 }
-

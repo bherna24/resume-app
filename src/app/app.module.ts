@@ -11,6 +11,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +22,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { HomeComponent } from './home/home.component';
 import { InterestingLinksComponent } from './interesting-links/interesting-links.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BooksComponent } from './interesting-links/links/books.component';
+import { ArtsComponent } from './interesting-links/arts/arts.component';
+import { VideosComponent } from './interesting-links/videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +33,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HomeComponent,
     InterestingLinksComponent,
     PageNotFoundComponent,
+    BooksComponent,
+    ArtsComponent,
+    VideosComponent,
     
   ],
   imports: [
@@ -44,7 +52,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MatTableModule,
     MatSortModule,
     MatFormFieldModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatCardModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,8 +13,13 @@
   font-size: x-large;
 }
 
-table {
-    width: 100%;
+  .interesting-menu{
+    display: flex;
+    justify-content:space-evenly;
+  }
+
+  .menu-button:hover{
+    color:#dca79f;
   }
   
   .mat-form-field {
@@ -35,23 +40,9 @@ table {
     padding: 8px 24px;
   }
 
-  table.mat-table{
-    background-color: rgba(0, 0, 0, 0);
-  }
-  .mat-column-author{
-    width: 10%;
-  }
-  .mat-column-title{
-    width: 15%;
-  }
-
   .videos{
     display: flex;
     flex-direction: row;
-  }
-
-  .mat-paginator{
-    background-color: rgba(0, 0, 0, 0);
   }
 /*
 .mat-expansion-panel-body{

@@ -3,36 +3,27 @@
        <br>
         With an unquenching thirst for knowledge, I sift through works and books for ideas and concepts; 
         a big-picture concept that can explain my existence is what I'm after!</p>
-      <div class="booktable">
         
-        <table mat-table [dataSource]="dataSource" matSort>
-
-              <ng-container matColumnDef="title">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header>Title</th>
-                <td mat-cell *matCellDef="let book">{{book.title}}</td>
-              </ng-container>
-
-              <ng-container matColumnDef="author">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header>Author</th>
-                <td mat-cell *matCellDef="let book">{{book.author}}</td>
-                </ng-container>
-
-                <ng-container matColumnDef="desc">
-                  <th mat-header-cell *matHeaderCellDef mat-sort-header>Desc</th>
-                  <td mat-cell *matCellDef="let book">{{book.desc}}</td>
-                </ng-container>
-
-              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-            
-            </table>
-
-            <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aira-label="Select page of books"></mat-paginator>
-      </div>
+        <div class="interesting-menu">
+          <button class="menu-button" mat-button [routerLink]="['links']">
+            <mat-icon>collections_bookmark</mat-icon>
+            <span>Links</span>
+          </button>
+          <button class="menu-button" mat-button [routerLink]="['videos']">
+            <mat-icon>video_library</mat-icon>
+            <span>Musings</span>
+          </button>
+          <button class="menu-button" mat-button [routerLink]="['arts']">
+            <mat-icon>format_paint</mat-icon>
+            <span>Projects</span>
+          </button>
+        </div>
+      <router-outlet></router-outlet>
+      
     </div>
 
-<!--   <tr class="mat-row" *matNoDataRow>
-                <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+   <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" colspan="4">No data matching the filter </td>
               </tr>
               <th mat-header-cell *matHeaderCellDef>Author</th>
-                <td mat-cell *matCellDef="let element">Victor Frankle</td>-->
+                <td mat-cell *matCellDef="let element">Victor Frankle</td>
