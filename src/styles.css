@@ -23,3 +23,11 @@ body { margin: 0; font-family: 'Gill Sans', sans-serif;  background-image: url("
 .p-flex-jc-sb{
     justify-content: center;
 }
+.resources a{
+    color: #dca79f
+  }
+  
+  .resources a:hover{
+    color: #8b9bf1;
+  }
+  

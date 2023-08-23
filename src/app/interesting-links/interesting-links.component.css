@@ -40,9 +40,13 @@
     padding: 8px 24px;
   }
 
-  .videos{
+  /* .videos{
     display: flex;
     flex-direction: row;
+  } */
+
+  mat-icon{
+    margin: 5px;
   }
 /*
 .mat-expansion-panel-body{

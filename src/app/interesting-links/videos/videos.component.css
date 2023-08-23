@@ -1,8 +1,4 @@
-.videos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 .mat-card{
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
@@ -11,3 +7,13 @@
 mat-expansion-panel{
     background-color: transparent;
 }
+
+mat-panel-title{
+    justify-content: center;
+}
+/* mat-accordion{
+    display: flex;
+} */
+/* .videos-container {
+    margin: 0 auto; 
+  } */
