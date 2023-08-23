@@ -13,3 +13,10 @@ table.mat-table{
 .mat-paginator{
     background-color: rgba(0, 0, 0, 0);
 }
+.resources a{
+  color: #dca79f
+}
+
+.resources a:hover{
+  color: #8b9bf1;
+}
