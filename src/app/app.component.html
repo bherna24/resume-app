@@ -36,42 +36,45 @@
     </div>
 
     <mat-divider></mat-divider>
-<div class="footer">
-    <footer >
-      <a target="_blank" href="https://www.instagram.com/_brhrn/">
-        <i class="fab fa-instagram custom-icon"></i>
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/in/brenda-hernandez-600362133/">
-          <i class="fab fa-linkedin custom-icon"></i>
-      </a>
-      <a target="_blank" href="mailto:brenda.hernandez243@gmail.com">
-        <i style="font-size:33px" class="fab fa-google custom-icon"></i>
-      </a>
-      <a target="_blank" href="https://medium.com/@brenda.hernandez243/about">
-        <i class="fab fa-medium-m custom-icon"></i>
-      </a>
-      <a target="_blank" href="https://twitter.com/brendahernanz">
-        <i class="fab fa-twitter custom-icon"></i>
-      </a>
-      <a target="_blank" href="https://www.goodreads.com/user/show/27110450-brenda-hernandez">
-        <i class="fab fa-goodreads custom-icon"></i>
-      </a>
-      <a target="_blank" href="https://github.com/bherna24">
-        <i class="fab custom-icon">&#xf09b;</i>
-      </a>
-      <a target="_blank" href="https://coinbase.com/join/hernan_lcib">
-        <i class="fab fa-btc custom-icon"></i>
-      </a>
-      <a target="_blank" href="https://www.filmaffinity.com/en/userratings.php?user_id=4204794">
-        <img style="border-radius:20%" src="assets/img/falogo.png">
-      </a>
+  <footer>
+    <a target="_blank" href="https://www.instagram.com/_brhrn/">
+      <i class="fab fa-instagram custom-icon"></i>
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/brenda-hernandez-600362133/">
+        <i class="fab fa-linkedin custom-icon"></i>
+    </a>
+    <a target="_blank" href="mailto:brenda.hernandez243@gmail.com">
+      <i style="font-size:33px" class="fab fa-google custom-icon"></i>
+    </a>
+    <a target="_blank" href="https://medium.com/@brenda.hernandez243/about">
+      <i class="fab fa-medium-m custom-icon"></i>
+    </a>
+    <a target="_blank" href="https://twitter.com/brendahernanz">
+      <i class="fab fa-twitter custom-icon"></i>
+    </a>
+    <a target="_blank" href="https://www.goodreads.com/user/show/27110450-brenda-hernandez">
+      <i class="fab fa-goodreads custom-icon"></i>
+    </a>
+    <a target="_blank" href="https://github.com/bherna24">
+      <i class="fab custom-icon">&#xf09b;</i>
+    </a>
+    <a target="_blank" href="https://coinbase.com/join/hernan_lcib">
+      <i class="fab fa-btc custom-icon"></i>
+    </a>
+    <a target="_blank" href="https://www.filmaffinity.com/en/userratings.php?user_id=4204794">
+      <img style="border-radius:20%" src="assets/img/falogo.png">
+    </a>
     </footer>
-  </div>
   </mat-sidenav>
 
   <mat-sidenav-content>
     <div class="content mat-elevation-z4">
+      <div class="banner">
       <h2>Hello there!</h2>
+      
+        <p class="quotes">{{ quotes[currentQuoteIndex] }}</p>
+      </div>
+      
       <div class="card">
         <router-outlet></router-outlet>
       </div>

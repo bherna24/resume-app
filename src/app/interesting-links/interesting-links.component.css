@@ -10,14 +10,15 @@
 } */
 .intro{
   margin:0 6% 6%;
-  font-size: x-large;
 }
 
   .interesting-menu{
     display: flex;
     justify-content:space-evenly;
   }
-
+  .mat-button{
+    font-size: x-large;
+  }
   .menu-button:hover{
     color:#dca79f;
   }
