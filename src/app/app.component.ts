@@ -11,7 +11,7 @@ import {  Router } from '@angular/router';
 export class AppComponent {
   title = 'Brenda Hernandez';
   quotes: string[] = [
-    "Spacetime tell matter how to move, matter tells spacetime how to curve. J.Wheeler",
+    "Spacetime tells matter how to move, matter tells spacetime how to curve. J.Wheeler",
     "Time and space and gravitation have no separate existence from matter. Einstein",
     "To think about space, imagine a big piece of rubber that you can pull and twist and bend. We are finite, in that we are a source of the infinite. Alan Guth",
     "All great and wonderful things are lonely. J.Steinbeck"

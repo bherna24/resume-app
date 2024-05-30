@@ -25,6 +25,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BooksComponent } from './interesting-links/books/books.component';
 // import { ArtsComponent } from './interesting-links/arts/arts.component';
 import { VideosComponent } from './interesting-links/videos/videos.component';
+import { ResumePageComponent } from './resume-page/resume-page.component';
+import { CertsComponent } from './resume-page/certs/certs.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { VideosComponent } from './interesting-links/videos/videos.component';
     BooksComponent,
     // ArtsComponent,
     VideosComponent,
+    ResumePageComponent,
+    CertsComponent,
     
   ],
   imports: [

@@ -26,16 +26,6 @@ a {
   position: fixed;
 }
 
-.banner{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.banner h2{
-  margin:0 0 3%;
-
-}
 .content{
   display: flex;
   height: max-content;
@@ -101,6 +91,8 @@ mat-divider{
   font-style: italic;
   font-size: large;
 }
+
+
 
 footer {
   display: flex;

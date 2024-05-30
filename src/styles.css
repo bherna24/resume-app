@@ -9,7 +9,26 @@ body { margin: 0; font-family: 'Gill Sans', sans-serif;  background-image: url("
     height:auto;
 }
 
+.intro{
+    margin:0 6% 6%;
+  }
 
+.interesting-menu{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+.banner{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.banner h2{
+margin:0 0 3%;
+
+}
 /* COMMON */
 .p-cursor{
     cursor:pointer;

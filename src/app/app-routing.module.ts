@@ -9,6 +9,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BooksComponent } from './interesting-links/books/books.component';
 // import { ArtsComponent } from './interesting-links/arts/arts.component';
 import { VideosComponent } from './interesting-links/videos/videos.component';
+import { ResumePageComponent } from './resume-page/resume-page.component';
+import { CertsComponent } from './resume-page/certs/certs.component';
 
 
 const routes: Routes = [
@@ -21,6 +23,11 @@ const routes: Routes = [
       // { path: 'arts', component:ArtsComponent},
       { path: 'videos', component:VideosComponent}
     ]},
+    { path: 'resume-page', component:ResumePageComponent
+      ,children:[
+        {path: 'certs', component:CertsComponent}
+      ]
+    },
   { path: '**', pathMatch:'full', component: PageNotFoundComponent },
  
 ];
