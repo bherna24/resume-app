@@ -4,7 +4,7 @@ mat-toolbar {
  background-color: transparent;
 }
 
-mat-sidenav {
+mat-sidenav { 
   margin: 40px 30px 0;
   width: 200px;
   border-right:none;
